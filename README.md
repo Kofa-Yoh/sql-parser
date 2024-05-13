@@ -18,11 +18,17 @@ git clone Kofa-Yoh/sql-parser
 cd sql-parser
 ```
 
-### 2 Build and run
+### 2.1 Build and run
 
 ```
 ./gradlew build
 java -jar build/libs/sql-parser.jar
+```
+
+### 2.2 Build and run with Docker
+```
+docker build . -t kotkina.parser
+docker run --rm -it kotkina.parser
 ```
 
 ### 3. Exit
